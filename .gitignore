@@ -1,7 +1,7 @@
-# design位设计图纸，毋须托管
+# design 为设计图纸，毋须托管
 /design
 
 # 有 package.json 在，不需要托管modules
 /node_modules
 
-# 
+#
