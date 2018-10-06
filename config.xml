@@ -40,7 +40,7 @@
     <plugin name="cordova-hot-code-push-plugin" spec="^1.5.3" />
     <plugin name="cordova-hot-code-push-local-dev-addon" spec="^0.4.2" />
     <chcp>
-        <config-file url="http://192.168.137.1/www/chcp.json" />
+        <config-file url="http://180.235.137.163/chcp.json" />
         <native-interface version="1" />
         <auto-download enabled="true" />
         <auto-install enabled="true" />
