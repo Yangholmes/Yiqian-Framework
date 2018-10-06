@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<widget id="io.cordova.yiqian" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+  <feature name="HotCodePushLocalDevMode">
+    <param name="android-package" value="com.nordnetab.chcp.localdev.HotCodePushLocalDevPlugin"/>
+    <param name="onload" value="true"/>
+  </feature>
+  <feature name="HotCodePush">
+    <param name="android-package" value="com.nordnetab.chcp.main.HotCodePushPlugin"/>
+    <param name="onload" value="true"/>
+  </feature>
+  <feature name="Camera">
+    <param name="android-package" value="org.apache.cordova.camera.CameraLauncher"/>
+  </feature>
+  <feature name="SplashScreen">
+    <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen"/>
+    <param name="onload" value="true"/>
+  </feature>
+  <feature name="Whitelist">
+    <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin"/>
+    <param name="onload" value="true"/>
+  </feature>
+  <name>一堑</name>
+  <description>
+        一堑, base on Cordova.
+    </description>
+  <author email="yangholmes@foxmail.com" href="http://yangholmes.github.io">
+        Yangholmes
+    </author>
+  <content src="index.html"/>
+  <access origin="*"/>
+  <allow-intent href="http://*/*"/>
+  <allow-intent href="https://*/*"/>
+  <allow-intent href="tel:*"/>
+  <allow-intent href="sms:*"/>
+  <allow-intent href="mailto:*"/>
+  <allow-intent href="geo:*"/>
+  <allow-intent href="market:*"/>
+  <chcp>
+    <config-file url="https://07cda7d0.ngrok.io/chcp.json"/>
+    <native-interface version="1"/>
+    <auto-download enabled="true"/>
+    <auto-install enabled="true"/>
+    <local-development enabled="true"/>
+  </chcp>
+  <icon density="ldpi" src="res/icon/android/icon-36-ldpi.png"/>
+  <icon density="mdpi" src="res/icon/android/icon-48-mdpi.png"/>
+  <icon density="hdpi" src="res/icon/android/icon-72-hdpi.png"/>
+  <icon density="xhdpi" src="res/icon/android/icon-96-xhdpi.png"/>
+  <splash density="land-hdpi" src="res/screen/android/screen-hdpi-landscape.png"/>
+  <splash density="land-ldpi" src="res/screen/android/screen-ldpi-landscape.png"/>
+  <splash density="land-mdpi" src="res/screen/android/screen-mdpi-landscape.png"/>
+  <splash density="land-xhdpi" src="res/screen/android/screen-xhdpi-landscape.png"/>
+  <splash density="port-hdpi" src="res/screen/android/screen-hdpi-portrait.png"/>
+  <splash density="port-ldpi" src="res/screen/android/screen-ldpi-portrait.png"/>
+  <splash density="port-mdpi" src="res/screen/android/screen-mdpi-portrait.png"/>
+  <splash density="port-xhdpi" src="res/screen/android/screen-xhdpi-portrait.png"/>
+  <preference name="loglevel" value="DEBUG"/>
+  <preference name="loadUrlTimeoutValue" value="60000"/>
+</widget>

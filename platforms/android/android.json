@@ -9,15 +9,33 @@
         "parents": {
           "/*": [
             {
+              "xml": "<feature name=\"HotCodePushLocalDevMode\"><param name=\"android-package\" value=\"com.nordnetab.chcp.localdev.HotCodePushLocalDevPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"HotCodePush\"><param name=\"android-package\" value=\"com.nordnetab.chcp.main.HotCodePushPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"Camera\"><param name=\"android-package\" value=\"org.apache.cordova.camera.CameraLauncher\" /></feature>",
+              "count": 1
+            },
+            {
               "xml": "<feature name=\"SplashScreen\"><param name=\"android-package\" value=\"org.apache.cordova.splashscreen.SplashScreen\" /><param name=\"onload\" value=\"true\" /></feature>",
               "count": 1
             },
             {
               "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
               "count": 1
-            },
+            }
+          ]
+        }
+      },
+      "config.xml": {
+        "parents": {
+          "/*": [
             {
-              "xml": "<feature name=\"Camera\"><param name=\"android-package\" value=\"org.apache.cordova.camera.CameraLauncher\" /></feature>",
+              "xml": "<preference name=\"loadUrlTimeoutValue\" value=\"60000\" />",
               "count": 1
             }
           ]
@@ -25,6 +43,24 @@
       },
       "AndroidManifest.xml": {
         "parents": {
+          "/manifest": [
+            {
+              "xml": "<uses-permission android:name=\"android.permission.INTERNET\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
+              "count": 1
+            }
+          ],
           "/*": [
             {
               "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
@@ -42,25 +78,39 @@
     }
   },
   "installed_plugins": {
-    "cordova-plugin-splashscreen": {
-      "PACKAGE_NAME": "io.cordova.hellocordova"
+    "cordova-hot-code-push-local-dev-addon": {
+      "PACKAGE_NAME": "io.cordova.yiqian"
     },
-    "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "io.cordova.hellocordova"
+    "cordova-hot-code-push-plugin": {
+      "PACKAGE_NAME": "io.cordova.yiqian"
     },
     "cordova-plugin-camera": {
       "ANDROID_SUPPORT_V4_VERSION": "27.+",
-      "PACKAGE_NAME": "io.cordova.hellocordova"
+      "PACKAGE_NAME": "io.cordova.yiqian"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "io.cordova.yiqian"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "io.cordova.yiqian"
     }
   },
   "dependent_plugins": {},
   "modules": [
     {
-      "id": "cordova-plugin-splashscreen.SplashScreen",
-      "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
-      "pluginId": "cordova-plugin-splashscreen",
+      "id": "cordova-hot-code-push-local-dev-addon.chcpLocalDev",
+      "file": "plugins/cordova-hot-code-push-local-dev-addon/www/chcpLocalDev.js",
+      "pluginId": "cordova-hot-code-push-local-dev-addon",
       "clobbers": [
-        "navigator.splashscreen"
+        "chcpLocalDev"
+      ]
+    },
+    {
+      "id": "cordova-hot-code-push-plugin.chcp",
+      "file": "plugins/cordova-hot-code-push-plugin/www/chcp.js",
+      "pluginId": "cordova-hot-code-push-plugin",
+      "clobbers": [
+        "chcp"
       ]
     },
     {
@@ -94,11 +144,21 @@
       "clobbers": [
         "CameraPopoverHandle"
       ]
+    },
+    {
+      "id": "cordova-plugin-splashscreen.SplashScreen",
+      "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
+      "pluginId": "cordova-plugin-splashscreen",
+      "clobbers": [
+        "navigator.splashscreen"
+      ]
     }
   ],
   "plugin_metadata": {
+    "cordova-hot-code-push-local-dev-addon": "0.4.2",
+    "cordova-hot-code-push-plugin": "1.5.3",
+    "cordova-plugin-camera": "4.0.4-dev",
     "cordova-plugin-splashscreen": "5.0.2",
-    "cordova-plugin-whitelist": "1.3.3",
-    "cordova-plugin-camera": "4.0.4-dev"
+    "cordova-plugin-whitelist": "1.3.3"
   }
 }

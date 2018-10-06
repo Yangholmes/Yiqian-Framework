@@ -7,15 +7,21 @@
     "files": {}
   },
   "installed_plugins": {
-    "cordova-plugin-splashscreen": {
-      "PACKAGE_NAME": "io.cordova.hellocordova"
+    "cordova-hot-code-push-local-dev-addon": {
+      "PACKAGE_NAME": "io.cordova.yiqian"
     },
-    "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "io.cordova.hellocordova"
+    "cordova-hot-code-push-plugin": {
+      "PACKAGE_NAME": "io.cordova.yiqian"
     },
     "cordova-plugin-camera": {
       "ANDROID_SUPPORT_V4_VERSION": "27.+",
-      "PACKAGE_NAME": "io.cordova.hellocordova"
+      "PACKAGE_NAME": "io.cordova.yiqian"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "io.cordova.yiqian"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "io.cordova.yiqian"
     }
   },
   "dependent_plugins": {}
