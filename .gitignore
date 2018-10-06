@@ -4,4 +4,5 @@
 # 有 package.json 在，不需要托管modules
 /node_modules
 
-#
+# Android 目标目录不需要跟踪
+/platforms
