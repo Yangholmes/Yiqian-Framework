@@ -7,14 +7,6 @@
     "is_top_level": true,
     "variables": {}
   },
-  "cordova-plugin-splashscreen": {
-    "source": {
-      "type": "registry",
-      "id": "cordova-plugin-splashscreen@5.0.2"
-    },
-    "is_top_level": true,
-    "variables": {}
-  },
   "cordova-plugin-camera": {
     "source": {
       "type": "registry",
@@ -27,14 +19,6 @@
     "source": {
       "type": "registry",
       "id": "cordova-hot-code-push-plugin"
-    },
-    "is_top_level": true,
-    "variables": {}
-  },
-  "cordova-hot-code-push-local-dev-addon": {
-    "source": {
-      "type": "registry",
-      "id": "cordova-hot-code-push-local-dev-addon"
     },
     "is_top_level": true,
     "variables": {}
