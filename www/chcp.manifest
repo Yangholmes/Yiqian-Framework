@@ -1,13 +1,5 @@
 [
   {
-    "file": "backup/index.css",
-    "hash": "e46d9a1c456a9c913ca10f3c16d50000"
-  },
-  {
-    "file": "backup/index.js",
-    "hash": "b144c071205225b243caacc5b550f592"
-  },
-  {
     "file": "css/chunk-0189.2b611ea1.css",
     "hash": "a3db772a10bb26c47c4aa66fd1cca5f3"
   },
@@ -124,52 +116,12 @@
     "hash": "14c7885248732cfcf5953f4dd292d965"
   },
   {
-    "file": "js/chunk-b649.29e34bd4.js",
-    "hash": "fdfc666a5d1c1cec3d0bc040b74a9c7c"
-  },
-  {
-    "file": "js/chunk-b649.29e34bd4.js.map",
-    "hash": "2502dc6db904b626c96b3aa88330ef06"
-  },
-  {
-    "file": "js/chunk-b649.577f140b.js",
-    "hash": "ccf7191399dd333109d88629c8ac305f"
-  },
-  {
-    "file": "js/chunk-b649.577f140b.js.map",
-    "hash": "39ef1a1d4b97412067dc766bfb173f9c"
-  },
-  {
-    "file": "js/chunk-b649.72e9abcc.js",
-    "hash": "f93d564262304ac99127e3c2cea270a4"
-  },
-  {
-    "file": "js/chunk-b649.72e9abcc.js.map",
-    "hash": "705ab015cc8456f364e681e086b67151"
-  },
-  {
-    "file": "js/chunk-b649.818974b6.js",
-    "hash": "3f1b5c448d0caf15414b8bbd8a13e690"
-  },
-  {
-    "file": "js/chunk-b649.818974b6.js.map",
-    "hash": "6f3b04416803fd1a7a637ca737ad8737"
-  },
-  {
     "file": "js/chunk-b649.88ecede1.js",
     "hash": "c89d06df02f2c5efd5868a582a20e11b"
   },
   {
     "file": "js/chunk-b649.88ecede1.js.map",
     "hash": "8d2aabdc84fdaf7f9cc25ca0fca48803"
-  },
-  {
-    "file": "js/chunk-b649.f0da320f.js",
-    "hash": "09d255980736059d9c1dafaa6fcdfc85"
-  },
-  {
-    "file": "js/chunk-b649.f0da320f.js.map",
-    "hash": "5aae42a27005de9c55a46b595bbe1623"
   },
   {
     "file": "js/chunk-vendors.1692cabf.js",
@@ -186,45 +138,5 @@
   {
     "file": "js/index.3ddb2386.js.map",
     "hash": "d195c66002f87836bdd7109071d9c905"
-  },
-  {
-    "file": "js/index.49df96d3.js",
-    "hash": "7e06a516ea5ba77f2ceb9bbbb0f40743"
-  },
-  {
-    "file": "js/index.49df96d3.js.map",
-    "hash": "06575aefe07b9d83e98681f09e03be3b"
-  },
-  {
-    "file": "js/index.55c22f42.js",
-    "hash": "c039682b85fdbcbe71be25322d1c9086"
-  },
-  {
-    "file": "js/index.55c22f42.js.map",
-    "hash": "2d448272f768699c411314a1acbbcb31"
-  },
-  {
-    "file": "js/index.633bd7e3.js",
-    "hash": "2fca31a0f3cd19a9eb400f37c75ed676"
-  },
-  {
-    "file": "js/index.633bd7e3.js.map",
-    "hash": "b6e7ad37e8d002e78daaa807451876d3"
-  },
-  {
-    "file": "js/index.6924869b.js",
-    "hash": "f033141245d1758c5a9c6c78ecc4a633"
-  },
-  {
-    "file": "js/index.6924869b.js.map",
-    "hash": "14e13bc80e53392f59f48b1975da73ea"
-  },
-  {
-    "file": "js/index.da3c08c3.js",
-    "hash": "074abc97078b32e1966e48b8890a38a2"
-  },
-  {
-    "file": "js/index.da3c08c3.js.map",
-    "hash": "a24b137c59d40a6224b06b19b8bc151f"
   }
 ]
