@@ -7,19 +7,27 @@ let cApp = {
     init() {
         return new Promise(resolve => {
             document.addEventListener('deviceready', e => {
+                console.log('Device is ready!');
                 resolve({code: 0, data: e, msg: 'Device is ready!'});
             }, false);
         });
     },
     checkVersion() {
         return new Promise((resolve, reject) => {
-            chcp.isUpdateAvailableForInstallation((error, data) => {
+            chcp.fetchUpdate((error, data) => {
                 if (error) {
-                    reject({code: error.code, data: error, msg: 'Nothing to install.'});
+                    reject({code: error.code, data: error, msg: error.description});
                 }
                 else {
                     resolve({code: 0, data, msg: 'New version was found!'});
                 }
+            });
+            chcp.getVersionInfo((err, data) => {
+                console.log('Current web version: ' + data.currentWebVersion);
+                console.log('Previous web version: ' + data.previousWebVersion);
+                console.log('Loaded and ready for installation web version: ' + data.readyToInstallWebVersion);
+                console.log('Application version name: ' + data.appVersion);
+                console.log('Application build version: ' + data.buildVersion);
             });
         });
     },

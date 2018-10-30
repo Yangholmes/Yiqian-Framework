@@ -39,7 +39,7 @@
     <plugin name="cordova-hot-code-push-plugin" spec="^1.5.3" />
     <access origin="*" />
     <chcp>
-        <config-file url="http://180.235.137.163:8979/chcp.json" />
+        <config-file url="http://180.235.137.163:8979/yiqian/chcp.json" />
         <native-interface version="1" />
         <auto-download enabled="false" />
         <auto-install enabled="false" />
